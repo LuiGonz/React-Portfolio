@@ -1,26 +1,20 @@
 import "./toggle.css";
-import Sun from "../../img/sun.png";
-import Moon from "../../img/moon.png";
-import { useContext } from "react";
-import { ThemeContext } from "../../context";
+import Sol from "../../img/sol.png";
+import Luna from "../../img/luna.png";
+import {useContext} from "react";
+import {ContextTheme} from "../../context";
 
-const Toggle = () => {
-  const theme = useContext(ThemeContext);
-
-  const handleClick = () => {
-    theme.dispatch({ type: "TOGGLE" });
+const ToggleSwitch = () => {
+  const themeToggle = useContext(ContextTheme);
+  const ToggleHandle = () => {
+    themeToggle.dispatch({type: "Toggle_Switch"});
   };
   return (
-    <div className="t">
-      <img src={Sun} alt="" className="t-icon" />
-      <img src={Moon} alt="" className="t-icon" />
-      <div
-        className="t-button"
-        onClick={handleClick}
-        style={{ left: theme.state.darkMode ? 0 : 25 }}
-      ></div>
+    <div className="toggle">
+      <img src={Sol} alt="" className="toggle-icon" />
+      <img src={Luna} alt="" className="toggle-icon" />
+      <div className="toggle-button" onClick={ToggleHandle} style={{left: themeToggle.state.ModeDark ? 0 : 25}} />
     </div>
   );
 };
-
-export default Toggle;
+export default ToggleSwitch;

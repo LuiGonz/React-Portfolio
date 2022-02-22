@@ -1,20 +1,20 @@
-import { useContext } from "react";
+import {useContext} from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
-import ProductList from "./components/productList/ProductList";
+import WebProdList from "./components/webProdList/WebProdList";
 import Toggle from "./components/toggle/Toggle";
-import { ThemeContext } from "./context";
+import {ContextTheme} from "./context";
 
 const App = () => {
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+  const appTheme = useContext(ContextTheme);
+  const ModeDark = appTheme.state.ModeDark;
   return (
-    <div style={{backgroundColor: darkMode ? "#222" : "white", color: darkMode && "powderblue"}}>
+    <div style={{backgroundColor: ModeDark ? "#222" : "white", color: ModeDark && "powderblue"}}>
       <Toggle />
       <Intro />
       <About />
-      <ProductList />
+      <WebProdList />
       <Contact />
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { ThemeProvider } from "./context";
+import {ProvideTheme} from "./context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <ProvideTheme>
       <App />
-    </ThemeProvider>
+    </ProvideTheme>
   </React.StrictMode>,
   document.getElementById("root")
 );

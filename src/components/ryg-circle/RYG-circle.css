@@ -1,4 +1,4 @@
-.p {
+.RYG {
     width: 30%;
     height: 28vh;
     margin: 20px 10px;
@@ -7,7 +7,7 @@
     box-shadow: 0.5em 0.5em .5em rgba(0, 0, 0, 0.781);
   }
   
-  .p-browser {
+  .RYG-browser {
     height: 20px;
     background-color: royalblue;
     display: flex;
@@ -16,7 +16,7 @@
     z-index: 2;
   }
   
-  .p-circle-1 {
+  .RYG-circle-1 {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -24,7 +24,7 @@
     background-color:crimson;
   }
 
-  .p-circle-2 {
+  .RYG-circle-2 {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -32,7 +32,7 @@
     background-color:gold;
   }
 
-  .p-circle-3 {
+  .RYG-circle-3 {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -40,22 +40,12 @@
     background-color:chartreuse;
   }
 
-  .p-img{
+  .RYG-img{
     width: 100%;
   }
   
-  /* .hero-helper,
-  .work-day {
-    width: 100%;
-    transition: all 2s ease;
-  } */
-  
-  /* .p:hover .p-img {
-    transform: translateY(-100%);
-  } */
-  
   @media screen and (max-width: 480px) {
-    .p {
+    .RYG {
       width: 40%;
       height: 20vh;
     }
